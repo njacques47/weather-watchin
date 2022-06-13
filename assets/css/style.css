@@ -1,0 +1,21 @@
+body {
+  margin: 0;
+}
+
+header {
+  background-color: #2274A5;
+  padding: 25px;
+
+}
+
+.container {
+  margin: 0;
+}
+.col-xs-6, .col-md-4 {
+  background-color: red;
+  color: white;
+}
+.col-xs-12, .col-md-8 {
+  background-color: blue;
+  color: white;
+}

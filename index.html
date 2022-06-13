@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weatherly</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+    <!-- header -->
+    <header>
+        <h1>Weatherly Dashboard</h1>
+    </header>
+
+    <!-- the main box holding it together -->
+    <main>
+        <div class="row">
+            <!-- search card goes here -->
+            <div class="col-4">
+                <!-- card gets created -->
+                <div class="card">
+                    <!-- creates the search bar area -->
+                    <form class="card-header">
+                        <label for="weatherSearch">Search Cities</label>
+                        <input type="search" id="weatherSearch" name="q" placeholder="ex.) Atlanta, GA">
+                        <button type="submit" value="submit" id="btn" class="btn btn-outline-primary">Search</button>
+                    </form>
+                    <!-- where the saved searches go -->
+                    <div class="card-body" id="search-values"> you're doing great, sweetie *crying tear emoji*</div>
+                </div>
+            </div>
+            <!-- current & projected forecasts go here -->
+            <div class="col">
+                <!-- current forecast -->
+                <div class="row border">
+                    <h2 id="current" class="weather-container">Current City</h2>
+                    <p>Temp:</p>
+                    <p>Wind:</p>
+                    <p>Humidity:</p>
+                    <p>UV Index:</p>
+                </div>
+                <!-- 5-day forecast -->
+                <div class="row">
+                    <h3>5-Day Forecast:</h3>
+                    <div class="card-group">
+                        <!-- forecasted weather should go here but how???? -->
+                        <div class="card">
+                            <p>Temp:</p>
+                            <p>Wind:</p>
+                            <p>Humidity:</p>
+                            <p>UV Index:</p>
+                        </div>
+                        <div class="card">
+                            <p>Temp:</p>
+                            <p>Wind:</p>
+                            <p>Humidity:</p>
+                            <p>UV Index:</p>
+                        </div>
+                        <div class="card">
+                            <p>Temp:</p>
+                            <p>Wind:</p>
+                            <p>Humidity:</p>
+                            <p>UV Index:</p>
+                        </div>
+                        <div class="card">
+                            <p>Temp:</p>
+                            <p>Wind:</p>
+                            <p>Humidity:</p>
+                            <p>UV Index:</p>
+                        </div>
+                        <div class="card">
+                            <p>Temp:</p>
+                            <p>Wind:</p>
+                            <p>Humidity:</p>
+                            <p>UV Index:</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="./assets/js/script.js"></script>
+</body>
+
+</html>
